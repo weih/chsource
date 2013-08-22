@@ -1,6 +1,6 @@
 # Chsource
 
-Change Gemfile to use 3rd party sources quickly.
+Make Gemfile to use 3rd party sources quickly.
 
 ![screen](http://ww2.sinaimg.cn/large/a4a89ff1jw1e7vljjfibxj20ds02pdga.jpg)
 
