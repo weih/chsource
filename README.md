@@ -2,7 +2,7 @@
 
 Change Gemfile to use 3rd party sources quickly.
 
-[[screen.jpg]]
+![screen](https://github.com/weih/chsource/raw/master/screen.jpg)
 
 ## Installation
 
