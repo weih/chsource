@@ -9,6 +9,8 @@ gem install chsource
 ```
 
 ## Usage
+
+``` shell
 Usage: chsource SOURCE
 
 Examples:
@@ -20,6 +22,7 @@ Examples:
 Options:
     -v, --version                    Print the version
     -h, --help                       Show this message
+```
 
 ## Contributing
 
