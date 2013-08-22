@@ -32,7 +32,7 @@ module Chsource
 
         opts.separator "Examples:"
         opts.separator "  $ chsource taobao   => source 'http://ruby.taobao.org'"
-        opts.separator "  $ chsource gzruby   => source 'http://gems.gzruby.com"
+        opts.separator "  $ chsource gzruby   => source 'http://gems.gzruby.org"
         opts.separator "  $ chsource tsinghua => source 'http://mirrors.tuna.tsinghua.edu.cn/rubygems'"
         opts.separator "  $ chsource rubygems => source 'http://rubygems.org'"
 
