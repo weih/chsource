@@ -4,8 +4,11 @@ require 'optparse'
 
 module Chsource
   module CLI
+    def self.invalid_input?
+      ARGV.size > 1 || !Chsource::Source.keys.include?(ARGV[0].to_sym)
+    end
     def self.start(args)
-      ARGV << '-h' if ARGV.empty? && $stdin.tty?
+      ARGV << '-h' if ARGV.empty? && $stdin.tty? || invalid_input?
 
       opts = OptionParser.new do |opts|
         opts.banner = "Usage: chsource SOURCE" 
