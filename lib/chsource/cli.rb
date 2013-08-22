@@ -14,7 +14,7 @@ module Chsource
     end
 
     def self.no_gem_file
-      if Dir.glob('Gemfile').size == 0
+      if !File.exist? 'Gemfile'
         puts "\e[31mCan't find Gemfile in current directory\e[0m"
         true
       else
