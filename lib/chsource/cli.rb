@@ -22,7 +22,7 @@ module Chsource
         opts.separator "Options:"
 
         opts.on("-v", "--version", "Print the version") do |v|
-          puts "Chsource v#{Version}"
+          puts "Chsource v#{VERSION}"
           exit
         end
 

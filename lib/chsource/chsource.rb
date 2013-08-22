@@ -12,12 +12,17 @@ module Chsource
       @text = File.read(Gemfile)
       @new_source = Source[new_source.to_sym]
 
-      @text.gsub!(/source ['"]https?:\/\/[\S]+['"]/, @new_source)
+      replace_source
+
       if @text.include? new_source
         write_to_file 
       else
         puts "\e[31mSomething goes wrong! please make sure your Gemfile has something like:\nsource 'http://rubygems.org'\e[0m"
       end
+    end
+
+    def self.replace_source
+      @text.gsub!(/source ['"]https?:\/\/[\S]+['"]/, @new_source)
     end
 
     def self.write_to_file
