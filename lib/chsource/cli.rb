@@ -7,7 +7,6 @@ module Chsource
     
     def self.check_input
       ARGV << '-h' if ARGV.empty? && $stdin.tty? || invalid_input?
-      exit if no_gem_file
     end
 
     def self.invalid_input?
@@ -52,6 +51,8 @@ module Chsource
 
         opts.parse!(args)
       end
+
+      exit if no_gem_file
 
       Chsource.change_source ARGV[0]
     end
