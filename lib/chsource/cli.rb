@@ -4,11 +4,27 @@ require 'optparse'
 
 module Chsource
   module CLI
+    
+    def self.check_input
+      ARGV << '-h' if ARGV.empty? && $stdin.tty? || invalid_input?
+      exit if no_gem_file
+    end
+
     def self.invalid_input?
       ARGV.size > 1 || !Chsource::Source.keys.include?(ARGV[0].to_sym)
     end
+
+    def self.no_gem_file
+      if Dir.glob('Gemfile').size == 0
+        puts "\e[31mCan't find Gemfile in current directory\e[0m"
+        true
+      else
+        false
+      end
+    end
+
     def self.start(args)
-      ARGV << '-h' if ARGV.empty? && $stdin.tty? || invalid_input?
+      check_input
 
       opts = OptionParser.new do |opts|
         opts.banner = "Usage: chsource SOURCE" 
