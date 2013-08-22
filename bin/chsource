@@ -1,4 +1,4 @@
-#!/env/usr/bin ruby
+#!/usr/bin/env ruby
 
 require 'chsource'
 
