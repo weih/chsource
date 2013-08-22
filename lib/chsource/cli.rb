@@ -5,7 +5,6 @@ require 'optparse'
 module Chsource
   module CLI
     def self.start(args)
-      # Chsource.change_source(argv.first) 
       ARGV << '-h' if ARGV.empty? && $stdin.tty?
 
       opts = OptionParser.new do |opts|
@@ -23,7 +22,7 @@ module Chsource
         opts.separator "Options:"
 
         opts.on("-v", "--version", "Print the version") do |v|
-          puts "Chsource v#{Chsource::Version}"
+          puts "Chsource v#{Version}"
           exit
         end
 
