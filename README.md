@@ -2,6 +2,8 @@
 
 Change Gemfile to use 3rd party sources quickly.
 
+[[screen.jpg]]
+
 ## Installation
 
 ``` shell

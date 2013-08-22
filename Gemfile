@@ -1,4 +1,4 @@
-source 'http://mirrors.tuna.tsinghua.edu.cn/rubygems'
+source 'http://ruby.taobao.org'
 
 # Specify your gem's dependencies in chsource.gemspec
 gemspec
