@@ -1,3 +1,3 @@
 module Chsource
-  VERSION = "0.0.7.mirror1"
+  VERSION = "0.1.0"
 end
