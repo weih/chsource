@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Chsource::VERSION
   spec.authors       = ["Hao Wei"]
   spec.email         = ["imwillmouse@gmail.com"]
-  spec.description   = %q{change Gemfile's source to 3rd party one}
-  spec.summary       = %q{change Gemfile's source to 3rd party one}
+  spec.description   = %q{change Gemfile's source to 3rd party quickly}
+  spec.summary       = %q{change Gemfile's source to 3rd party quickly}
   spec.homepage      = "http://github.com/weih/chsource"
   spec.license       = "MIT"
 
