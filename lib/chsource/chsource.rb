@@ -29,7 +29,7 @@ module Chsource
       File.open(Gemfile, 'w') do |file|
         file.write @text
       end
-      puts "\e[32mChange to #{@new_source} successfully!\e[0m"
+      puts "\e[32mChange to #{@new_source} successful!\e[0m"
     end
   end
 end
