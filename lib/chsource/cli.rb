@@ -35,7 +35,7 @@ module Chsource
         opts.parse!(args)
       end
 
-      Chsource.change_source(args.first, args.last)
+      Chsource.change_source ARGV[0]
     end
   end
 end

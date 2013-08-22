@@ -2,6 +2,8 @@ require 'test_helper'
 
 module Chsource
   class TestChsource< Minitest::Test
+    Dir.chdir 'test/fixtures'
+
     def setup
       @rubygems= 'rubygems'
       @taobao = 'taobao'
@@ -14,32 +16,23 @@ module Chsource
       assert_equal true, file_content.include?(content)
     end
 
-    def change_source(from, to, &block)
-      Chsource.change_source(from, to)
-      yield
-      Chsource.change_source(to, from)
-    end
-
     def test_change_source_to_taobao
-      change_source(@rubygems, @taobao) do
-        check_content('taobao')
-      end
+      Chsource.change_source(@taobao)
+      check_content('taobao')
     end
 
     def test_change_source_to_gzruby
-      change_source(@rubygems, @gzruby) do
-        check_content('gzruby')
-      end
+      Chsource.change_source(@gzruby)
+      check_content('gzruby')
     end
 
     def test_change_source_to_tsinghua
-      change_source(@rubygems, @tsinghua) do
-        check_content('tsinghua')
-      end
+      Chsource.change_source(@tsinghua)
+      check_content('tsinghua')
     end
 
-    # def teardown
-    #   Chsource.change_source(@to_taobao, @rubygems)
-    # end
+    def teardown
+      Chsource.change_source(@rubygems)
+    end
   end
 end
