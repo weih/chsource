@@ -1,5 +1,3 @@
-require 'pry'
-
 module Chsource
   class Chsource
     Source = {
