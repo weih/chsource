@@ -17,7 +17,7 @@ Usage: chsource SOURCE
 
 Examples:
   $ chsource taobao   => source 'http://ruby.taobao.org'
-  $ chsource gzruby   => source 'http://gems.gzruby.org
+  $ chsource gzruby   => source 'http://gems.gzruby.org'
   $ chsource tsinghua => source 'http://mirrors.tuna.tsinghua.edu.cn/rubygems'
   $ chsource rubygems => source 'http://rubygems.org'
 
