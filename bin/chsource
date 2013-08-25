@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'chsource'
-
-Chsource::CLI.start(ARGV)

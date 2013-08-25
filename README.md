@@ -1,27 +1,16 @@
-# Chsource
+# Modernist Theme
 
-Make Gemfile to use 3rd party sources quickly.
+[Demo the Theme](http://orderedlist.github.com/modernist/)
 
-![screen](http://ww2.sinaimg.cn/large/a4a89ff1jw1e7vljjfibxj20ds02pdga.jpg)
+This is the raw HTML and styles that are used for the *modernist* theme on [GitHub Pages](http://pages.github.com/).
 
-## Installation
+# SCSS
 
-``` shell
-gem install chsource
-```
+This project uses SCSS for it's CSS. If you want to contribute, please make your changes to the .scss files in the /sass directory. If you're unfamiliar with SCSS, here's [an excellent article to get you started](http://www.alistapart.com/articles/getting-started-with-sass/). I recommend using [LiveReload](http://livereload.com)
 
-## Usage
+Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
 
-``` shell
-Usage: chsource SOURCE
+# License
 
-Examples:
-  $ chsource taobao   => source 'http://ruby.taobao.org'
-  $ chsource gzruby   => source 'http://gems.gzruby.org'
-  $ chsource tsinghua => source 'http://mirrors.tuna.tsinghua.edu.cn/rubygems'
-  $ chsource rubygems => source 'http://rubygems.org'
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
 
-Options:
-    -v, --version                    Print the version
-    -h, --help                       Show this message
-```
