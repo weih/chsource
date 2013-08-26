@@ -1,5 +1,7 @@
 # Chsource
 
+[![Code Climate](https://codeclimate.com/repos/521b79f613d63734a41047e4/badges/211660ece0a9f3c1051a/gpa.png)](https://codeclimate.com/repos/521b79f613d63734a41047e4/feed)
+
 Make Gemfile to use 3rd party sources quickly.
 
 ![screen](http://ww2.sinaimg.cn/large/a4a89ff1jw1e7vljjfibxj20ds02pdga.jpg)
