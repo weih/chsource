@@ -31,6 +31,11 @@ module Chsource
       check_content('tsinghua')
     end
 
+    def test_cli
+      CLI::start ['taobao']
+      check_content('taobao')
+    end
+
     def teardown
       Chsource.change_source(@rubygems)
     end

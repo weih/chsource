@@ -54,7 +54,7 @@ module Chsource
 
       exit if no_gem_file
 
-      Chsource.change_source ARGV[0]
+      Chsource.change_source args[0]
     end
   end
 end
