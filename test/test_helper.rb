@@ -1,4 +1,13 @@
 require 'minitest/autorun'
+require 'simplecov'
+require 'coveralls'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+
+SimpleCov.start
 
 testdir = File.dirname(__FILE__)
 $LOAD_PATH.unshift testdir unless $LOAD_PATH.include?(testdir)

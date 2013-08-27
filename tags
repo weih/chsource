@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CLI	lib/chsource/cli.rb	/^  module CLI$/;"	m	class:Chsource
+Chsource	lib/chsource/chsource.rb	/^  class Chsource$/;"	c	class:Chsource
+Chsource	lib/chsource/chsource.rb	/^module Chsource$/;"	m
+Chsource	lib/chsource/cli.rb	/^module Chsource$/;"	m
+Chsource	lib/chsource/version.rb	/^module Chsource$/;"	m
+change_source	lib/chsource/chsource.rb	/^    def self.change_source(new_source)$/;"	F	class:Chsource.Chsource
+check_input	lib/chsource/cli.rb	/^    def self.check_input$/;"	F	class:Chsource.CLI
+invalid_input	lib/chsource/cli.rb	/^    def self.invalid_input?$/;"	F	class:Chsource.CLI
+no_gem_file	lib/chsource/cli.rb	/^    def self.no_gem_file$/;"	F	class:Chsource.CLI
+replace_source	lib/chsource/chsource.rb	/^    def self.replace_source$/;"	F	class:Chsource.Chsource
+start	lib/chsource/cli.rb	/^    def self.start(args)$/;"	F	class:Chsource.CLI
+write_to_file	lib/chsource/chsource.rb	/^    def self.write_to_file$/;"	F	class:Chsource.Chsource
